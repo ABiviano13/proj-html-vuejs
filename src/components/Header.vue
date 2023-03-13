@@ -9,6 +9,12 @@ export default {
                 'News',
                 'Contact us',
                 'Shopping'
+            ],
+            services: [
+                '24/7 Delivery',
+                'Over 100 Dishes',
+                'In app ordering',
+                'Fast Delivery'
             ]
         }
     }
@@ -47,6 +53,12 @@ export default {
                         View our Menu
                     </button>
                 </div>
+                <ul class="bar-services">
+                    <li class="service"
+                    v-for="service in services">
+                        {{ service }}
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
@@ -91,13 +103,15 @@ export default {
         justify-content: center;
         font-weight: bold;
         height: 90%;
+        margin-bottom: -80px;
 
         .text-small{
-            font-size: 43px;
+            font-size: 40px;
         }
 
         .text-big{
             font-size: 63px;
+            line-height: 1;
             .text-yellow{
                 color: $yellow;
             }
@@ -113,6 +127,16 @@ export default {
             margin-top: 49px;
         }
 
+    }
+
+    .bar-services{
+        background-color: $white;
+        color: $black;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 10px;
+        text-transform: uppercase;
+        padding: 45px 0;
     }
 }
 
