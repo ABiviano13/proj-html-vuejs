@@ -1,5 +1,12 @@
 <script>
+import {ArrowRightIcon} from '@heroicons/vue/24/solid';
+import {ShoppingCartIcon} from '@heroicons/vue/24/solid';
+
 export default {
+    components: {
+        ArrowRightIcon,
+        ShoppingCartIcon
+    },
     data() {
         return {
             links: [
@@ -7,8 +14,7 @@ export default {
                 'Order Online',
                 'About',
                 'News',
-                'Contact us',
-                'Shopping'
+                'Contact us'
             ],
             services: [
                 '24/7 Delivery',
@@ -37,6 +43,10 @@ export default {
                         >
                             {{ link }}             
                         </li>
+                        <li class="link">
+                            <ShoppingCartIcon class="shopping-cart"></ShoppingCartIcon>
+                        </li>
+
                     </ul>
                 </div>
                 <div class="hero-text">
@@ -51,6 +61,7 @@ export default {
                     </div>
                     <button class="button">
                         View our Menu
+                        <ArrowRightIcon class="arrow-right"></ArrowRightIcon>
                     </button>
                 </div>
                 <ul class="bar-services">
@@ -78,7 +89,6 @@ export default {
 
     .hero{
         height: 100%;
-        position: relative;
     }
 
     .sidebar{
@@ -89,10 +99,14 @@ export default {
 
         .sidebar-links{
             display: flex;
-            gap: 14px;
+            gap: 46px;
 
             .active{
                 color: $yellow;
+            }
+
+            .shopping-cart{
+                width: 18px;
             }
         }
     }
@@ -102,29 +116,18 @@ export default {
         flex-direction: column;
         justify-content: center;
         font-weight: bold;
-        height: 90%;
-        margin-bottom: -80px;
+        height: 85%;
+        margin-bottom: -25px;
 
         .text-small{
             font-size: 40px;
         }
 
         .text-big{
-            font-size: 63px;
-            line-height: 1;
+            font-size: 65px;
             .text-yellow{
                 color: $yellow;
             }
-        }
-
-        .button{
-            background-color: $red;
-            color: $white;
-            width: max-content;
-            border: 0;
-            border-radius: 20px;
-            padding: 10px 27px;
-            margin-top: 49px;
         }
 
     }

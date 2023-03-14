@@ -21,7 +21,9 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../style/partials/variables.scss' as *;
+
 *{
-    color: black;
+    color: $black;
 }
 </style>
