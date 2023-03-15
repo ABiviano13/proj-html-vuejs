@@ -1,12 +1,12 @@
 <script>
 
-import PopularDishes from './PopularDishes.vue';
-import Menu from './Menu.vue';
+import SectionPopularDishes from './SectionPopularDishes.vue';
+import SectionMenu from './SectionMenu.vue';
 
 export default {
     components: {
-        PopularDishes,
-        Menu
+        SectionPopularDishes,
+        SectionMenu
     },
     data() {
         return {
@@ -18,8 +18,8 @@ export default {
 </script>
 
 <template>
-    <PopularDishes></PopularDishes>
-    <Menu></Menu>
+    <SectionPopularDishes></SectionPopularDishes>
+    <SectionMenu></SectionMenu>
 </template>
 
 <style lang="scss" scoped>
