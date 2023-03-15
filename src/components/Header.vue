@@ -1,12 +1,6 @@
 <script>
-import {ArrowRightIcon} from '@heroicons/vue/24/solid';
-import {ShoppingCartIcon} from '@heroicons/vue/24/solid';
 
 export default {
-    components: {
-        ArrowRightIcon,
-        ShoppingCartIcon
-    },
     data() {
         return {
             links: [
@@ -44,7 +38,7 @@ export default {
                             {{ link }}             
                         </li>
                         <li class="link">
-                            <ShoppingCartIcon class="shopping-cart"></ShoppingCartIcon>
+                            <i class="fa-solid fa-cart-shopping"></i>
                         </li>
 
                     </ul>
@@ -61,7 +55,7 @@ export default {
                     </div>
                     <button class="button">
                         View our Menu
-                        <ArrowRightIcon class="arrow-right"></ArrowRightIcon>
+                        <i class="fa-solid fa-circle-arrow-right"></i>
                     </button>
                 </div>
                 <ul class="bar-services">
@@ -125,6 +119,7 @@ export default {
 
         .text-big{
             font-size: 65px;
+            margin-bottom: 49px;
             .text-yellow{
                 color: $yellow;
             }

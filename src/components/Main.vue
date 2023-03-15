@@ -1,4 +1,5 @@
 <script>
+
 import PopularDishes from './PopularDishes.vue';
 import Menu from './Menu.vue';
 
@@ -13,6 +14,7 @@ export default {
         }
     }
 }
+
 </script>
 
 <template>
