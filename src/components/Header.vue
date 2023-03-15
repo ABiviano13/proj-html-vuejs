@@ -95,6 +95,13 @@ export default {
             display: flex;
             gap: 46px;
 
+            .link{
+                &:hover{
+                    color: $yellow;
+                }
+            }
+
+
             .active{
                 color: $yellow;
             }
@@ -102,6 +109,7 @@ export default {
             .shopping-cart{
                 width: 18px;
             }
+
         }
     }
 

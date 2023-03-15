@@ -38,6 +38,15 @@ export default {
 .card{
     width: 382px;
 
+    figure {
+
+        .card-img{
+            &:hover{
+                filter: brightness(70%);
+            }
+        }
+    }
+
     .text-card{
         padding-top: 27px;
         display: flex;

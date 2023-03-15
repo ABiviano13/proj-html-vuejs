@@ -148,14 +148,27 @@ export default {
 
             .fa-leaf{
                 color: $green;
+
+                &:hover {
+                    color: $yellow;
+                }
             }
 
             .fa-wheat-awn{
                 color: $yellow;
+                
+                &:hover {
+                    filter: contrast(200%) brightness(150%);
+                }
+
             }
 
             .fa-cow{
                 color: $lightblue;
+
+                &:hover {
+                    color: $red;
+                }
             }
 
             .fa-drumstick-bite{

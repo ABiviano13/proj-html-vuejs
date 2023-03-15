@@ -50,7 +50,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-
+@use '../style/partials/variables.scss' as *;
 .news {
     margin-bottom: 184px;
     .row-button{
@@ -60,11 +60,24 @@ export default {
 
     .cards-news {
         display: flex;
+        gap: 22px;
+        margin-top: 67px;
         .card{
             text-align: center;
+
             .img-card{
                 height: 437px;
                 margin-bottom: 43px;
+
+                &:hover{
+                    filter: brightness(70%);
+                }
+            }
+
+            .title-card{
+                &:hover{
+                    color: $red;
+                }
             }
 
             .uppercase{
