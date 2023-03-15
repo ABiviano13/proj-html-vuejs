@@ -115,16 +115,12 @@ export default {
 <style lang="scss" scoped>
 @use '../style/partials/variables.scss' as *;
 .menu-categories{
-    margin-top: 150px;
 
     .row-button{
         display: flex;
         justify-content: end;
     }
 
-    .title{
-        font-size: 47px;
-    }
 
     .cards-menu {
         display: grid;

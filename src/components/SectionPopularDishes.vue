@@ -32,7 +32,7 @@ export default {
 <template>
     <section class="popular-dishes">
         <div class="container">
-            <h1>
+            <h1 class="title">
                 Our Most Popular Dishes
             </h1>
 
@@ -57,7 +57,6 @@ export default {
 <style lang="scss" scoped>
 @use '../style/partials/variables.scss' as *;
 .popular-dishes{
-    margin-top: 130px;
     text-align: center;
 
     .cards-dishes{

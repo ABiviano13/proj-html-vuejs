@@ -2,11 +2,13 @@
 
 import SectionPopularDishes from './SectionPopularDishes.vue';
 import SectionMenu from './SectionMenu.vue';
+import SectionNews from './SectionNews.vue';
 
 export default {
     components: {
         SectionPopularDishes,
-        SectionMenu
+        SectionMenu,
+        SectionNews
     },
     data() {
         return {
@@ -20,6 +22,7 @@ export default {
 <template>
     <SectionPopularDishes></SectionPopularDishes>
     <SectionMenu></SectionMenu>
+    <SectionNews></SectionNews>
 </template>
 
 <style lang="scss" scoped>
