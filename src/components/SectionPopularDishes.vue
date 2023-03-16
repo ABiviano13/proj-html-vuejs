@@ -64,25 +64,6 @@ export default {
         gap: 33px;
         margin-top: 78px;
         margin-bottom: 54px;
-        .card{
-            width: 382px;
-
-            .text-card{
-                padding-top: 27px;
-                display: flex;
-                flex-direction: column;
-                gap: 21px;
-
-                .price-card{
-                    color: $red;
-                    font-size: 13px;
-
-                    .dash{
-                        color: $black;
-                    }
-                }
-            }
-        }
     }
 
     .button{
